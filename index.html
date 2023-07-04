@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Quartz Font -->
+    <link
+      href="//db.onlinewebfonts.com/c/55f96a010646b90457e9bc03d43e2b67?family=Quartz"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Stopwatch app</title>
+  </head>
+  <body>
+    <div class="container stopwatch">
+      <div class="stopwatch__display">
+        <span id="js-hour">00:</span><span id="js-minutes">00:</span
+        ><span id="js-seconds">00:</span><span id="js-milliseconds">00</span>
+      </div>
+      <div class="stopwatch__actions">
+        <button class="stopwatch__actions-start" id="js-start-stopwatch">
+          Start
+        </button>
+        <button class="stopwatch__actions-reset" id="js-reset-stopwatch">
+          Reset
+        </button>
+      </div>
+    </div>
+    <div id="js-reset-confirmation-message" class="reset">
+      <p class="reset__message">Reset?</p>
+      <div class="reset__wrapper">
+        <button id="js-yes-reset" class="reset__yes">Yes</button>
+        <button id="js-no-reset" class="reset__no">No</button>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
